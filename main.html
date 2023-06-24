@@ -7,20 +7,48 @@
 </head>
  
 <body>
-	<h1>Welcome to Accio Jobs!</h1>
-	<hr>
-	<img src="https://images.unsplash.com/photo-1505028106030-e07ea1bd80c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDR8fHNvZnR3YXJlJTIwZGV2ZWxvcG1lbnQlMjBjYXJlZXIlMjBwYXRofGVufDB8fHx8MTY3MjMwNDEyNg&ixlib=rb-4.0.3&q=80&w=2000" 
-        alt="logo"
-        height="300px">
-	<p>5 software program developer profession paths</p>
-	<ul>
-		<!-- list -->
-		<li>Cloud development</li>
-		<li>Desktop development</li>
-		<li>Video Sport development</li>
-		<li>Mobile development</li>
-		<li>Web development</li>
-	</ul>
+	 <form id="my-form" method="post">
+				<div>
+			<label for="name">1.Name</label>
+			<input type="text" id="name" placeholder="Name" required>
+		</div>		
+		<div>
+			<label for="email">2.Email</label>
+			<input type="email" id="email" placeholder="Email" required>
+		</div>		
+		<div> 
+				<!-- 3. -->
+			 <label for="gender">3.Gender:</label>
+			 <label for="gender_m">M</label>
+			  <input type="radio" id="gender_m" name="gender" required>
+			  <label for="gender">F</label>
+			  <input type="radio" id="gender_f" name="gender" required>
+		</div>		
+		<div>
+			<label for="cars">4.Car Brands</label>
+			  <select name="cars" id="cars" required>
+				  <option value="" disabled selected>--Please choose an option--</option>
+				  <option>BMW</option>
+				  <option>Audi</option>
+				  <option>Mercedez</option>
+			  </select>
+		</div>
+		<div>
+			 <label for="Carage">5.CarAge:</label>
+			 <input type="number" id="Carage" min="0" required >
+		</div>		
+		<div>
+			<label for="dop">6.Date Of Purchase</label>
+			<input type="date" id="dop" required>
+		</div>		
+		<div>
+			 <label for="password">8.Password</label>
+			 <input type="password" id="password" required>
+		</div>
+		 <div>
+			<button type="submit">Submit</button>
+		</div>
+	</form> 
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
